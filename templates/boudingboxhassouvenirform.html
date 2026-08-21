@@ -1,0 +1,8 @@
+{% extends 'base.html' %}{% block content %}<form  enctype="multipart/form-data" method="POST">
+<div class="field"><label for="somefieldboudingboxhassouvenirvideo">video</label><input type="file" id="somefieldboudingboxhassouvenirvideo" name="video"/></div>
+<div class="field"><label for="somefielduser_id">user_id</label><select id="somefielduser_id" name="user_id"><option value="novalue">no value</option>
+{% for someuser in touslesuser %}
+<option value="{{ someuser['id'] }}">{{ someuser['name'] }}</option>{% endfor %}
+</select></div>
+<div class="field"><label for="somefieldboudingboxhassouvenirboundingbox_id">boundingbox_id</label><input type="text" id="somefieldboudingboxhassouvenirboundingbox_id" name="boundingbox_id"/></div>
+<div class="field"><label for="somefieldboudingboxhassouvenirdescription">description</label><input type="text" id="somefieldboudingboxhassouvenirdescription" name="description"/></div><div class="actions"><input type="submit"/></div></form>{% for x in boudingboxhassouvenirs %}{{x["video"] }}{% endfor %}{% endblock %}{% block liens %}<a href="/">bienvenue</a><a href="/add_one_boudingboxhassouvenir"> add one boudingboxhassouvenir</a>{% endblock %}

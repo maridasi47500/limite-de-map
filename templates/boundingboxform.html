@@ -1,0 +1,7 @@
+{% extends 'base.html' %}{% block content %}<form  enctype="multipart/form-data" method="POST">
+<div class="field"><label for="somefieldboundingboxdebutlimitmap_id">debutlimitmap_id</label><input type="text" id="somefieldboundingboxdebutlimitmap_id" name="debutlimitmap_id"/></div>
+<div class="field"><label for="somefieldboundingboxfinlimitdemap_id">finlimitdemap_id</label><input type="text" id="somefieldboundingboxfinlimitdemap_id" name="finlimitdemap_id"/></div>
+<div class="field"><label for="somefielduser_id">user_id</label><select id="somefielduser_id" name="user_id"><option value="novalue">no value</option>
+{% for someuser in touslesuser %}
+<option value="{{ someuser['id'] }}">{{ someuser['name'] }}</option>{% endfor %}
+</select></div><div class="actions"><input type="submit"/></div></form>{% for x in boundingboxs %}{{x["debutlimitmap_id"] }}{% endfor %}{% endblock %}{% block liens %}<a href="/">bienvenue</a><a href="/add_one_boundingbox"> add one boundingbox</a>{% endblock %}

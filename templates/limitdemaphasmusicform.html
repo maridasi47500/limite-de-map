@@ -1,0 +1,4 @@
+{% extends 'base.html' %}{% block content %}<form  enctype="multipart/form-data" method="POST">
+<div class="field"><label for="somefieldlimitdemaphasmusicboundingbox_id">boundingbox_id</label><input type="text" id="somefieldlimitdemaphasmusicboundingbox_id" name="boundingbox_id"/></div>
+<div class="field"><label for="somefieldlimitdemaphasmusicartist">artist</label><input type="text" id="somefieldlimitdemaphasmusicartist" name="artist"/></div>
+<div class="field"><label for="somefieldlimitdemaphasmusictitle">title</label><input type="text" id="somefieldlimitdemaphasmusictitle" name="title"/></div><div class="actions"><input type="submit"/></div></form>{% for x in limitdemaphasmusics %}{{x["boundingbox_id"] }}{% endfor %}{% endblock %}{% block liens %}<a href="/">bienvenue</a><a href="/add_one_limitdemaphasmusic"> add one limitdemaphasmusic</a>{% endblock %}

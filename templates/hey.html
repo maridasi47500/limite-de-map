@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block montitre %}
+debut de mes mots: bienvenue
+{% endblock %}
+{% block content %}
+<h1># limite-de-map</h1>
+{% for x in users | reverse %}
+ <li>{{ x["first_name"]  }}</li>
+
+{% endfor %} 
+fin de mes mots : tu as un telephone et tu te promene dans ta ville dans une zone bouding box , des snos de percussion doivent jouer /les formulaire pour poster des infos sur lendroit doit se desactiver si tu quittes la bordure de la zone
+Dans la zone tu peux écouter une musique, associée à cette zone, et recevori des souvenirs photos ou videos de tes voyages
+{% endblock %}
+{% block liens %}
+<a href="/">welcome</a>
+{% endblock %}
