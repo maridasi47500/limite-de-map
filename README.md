@@ -2,7 +2,8 @@
 hey
 🧱 *Limite de Map* — Le bord du connu
 
-C’est là où la ville s’arrête… ou commence à rêver.
+C’est là où la ville s’arrête… ou commence à rêver.(ou commence à voyager)
+
 
 🎮 Fonction narrative
 
